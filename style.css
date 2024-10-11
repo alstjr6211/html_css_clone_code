@@ -34,6 +34,7 @@ h1 svg {
 #header {
   display: gird;
   grid-template-columns: 1fr 1fr;
+  margin: 20px 6px 30px;
 
 
 }
@@ -53,4 +54,41 @@ button {
   padding: 5px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+div#game{
+  line-height: 35px;
+  height: 105px;
+  overflow: hidden;
+  position: relative;
+}
+
+#focus-error {
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  padding-top: 35px;
+}
+
+#gmae:focus #focus-error {
+  display: none;
+}
+
+#words{
+  filter: blur(5px);
+  color: var(--textSecondary);
+}
+
+div.word{
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0 5px;
+}
+
+.letter.correct{
+  color: #fff;
+}
+
+.letter.intcorrect {
+  color: #f55;
 }
